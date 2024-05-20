@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* CONTENEDOR - CAJA PADRE QUE MANIPULA TODO EL DATATABLE */
+.contenedor {
+    width: 88%;
+    margin: 50px auto;
+}
+
+/* Estilo para el encabezado de la tabla */
+table.dataTable thead th {
+    background-color: #e6e6e6;
+    color: #000;
+}
+
+/* Estilo para el cuerpo de la tabla */
+table.dataTable tbody td {
+    color: #000;
+}
+
+/* Estilo para el pie de la tabla */
+td {
+    text-align: center;
+}
+
+/* Estilo para las filas impares */
+.row-odd {
+    background-color: #f2f2f2 !important;
+}
+
+/* Estilo para las filas pares */
+.row-even {
+    background-color: #ffffff !important;
+}
+
+/* Estilo para la posicion del botón de búsqueda y agregar usuario*/
+#example_filter {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los botones del paginado */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #fff !important;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff !important;
+    background: none;
+    background: none;
+    background: none;
+    background: none;
+    background: none;
+    background: none;
+}
+
+/* Estilos del hover de los botones del paginado */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    border: none;
+    border-radius: 10px;
+    background-color: #585858;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #007bff), color-stop(100%, #054c99));
+    background: -webkit-linear-gradient(top, #007bff 0%, #007bff 100%);
+    background: -moz-linear-gradient(top, #007bff 0%, #007bff 100%);
+    background: -ms-linear-gradient(top, #007bff 0%, #007bff 100%);
+    background: -o-linear-gradient(top, #007bff 0%, #007bff 100%);
+    background: linear-gradient(to bottom, #007bff 0%, #007bff 100%);
+}
+
+/* Estilo para el botón de agregar */
+.add-button {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Alineacion de los botones de acciones */
+.btnAcciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Estilos para los botones de acciones (BOTON EDITAR) */
+.btnEditar {
+    padding: 2px 10px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+}
+
+.btnEditar:hover {
+    background-color: #155f4b;
+    color: rgb(187, 186, 186);
+}
+
+/* Estilos para los botones de acciones (BOTON ELIMINAR) */
+.btnEliminar {
+    padding: 2px 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.btnEliminar:hover {
+    background-color: #b02a37;
+    color: rgb(187, 186, 186);
+}
+
+/* Estilos para los iconos de los botones de acciones */
+.iconoM {
+    padding-top: 3px;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.add-button .material-icons {
+    margin-left: 5px;
+}
+
+/* Estilos para el select de mostrar registro */
+.dataTables_wrapper .dataTables_length select {
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilos para el boton de accion Ver Mas */
+.botonVerMas {
+    border-radius: 10px;
+    border: none;
+    background-color: #0d6efd;
+    color: #fff;
+    cursor: pointer;
+    padding: 6px 8px;
+}
+
+.botonVerMas:hover {
+    background-color: #1555b6;
+}
+
+/* Estilos de la tabla */
+.table-rounded {
+    border-radius: 10px;
+    overflow: hidden;
+    border-bottom: none !important;
+}
+
+/* Estilos del input de busqueda */
+.dataTables_filter input[type="search"] {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 300px;
+    height: 39px;
+}
+
+/* Estilos del input de busqueda */
+.dataTables_filter input[type="search"]:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/* Eliminar borde del head de la tabla */
+.sorting {
+    border-bottom: none !important;
+}
+
+/* Eliminar borde inferior de la tabla */
+.table-rounded {
+    border-bottom: none !important;
+}
+
+/* Agregra borde a las filas de la tabla */
+td {
+    border-top: 1px solid #b6b6b69d !important;
+}
